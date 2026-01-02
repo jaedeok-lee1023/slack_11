@@ -47,11 +47,14 @@ def send_slack_message(message, channel):
 def main():
     for cluster in clusters:
         # 메시지 제목 설정
-        header = f":loudspeaker: *『인사총무팀 공지』* <!channel>\n\n"
+        header = f"*[공지｜<https://static.wixstatic.com/media/50072f_d531fd60687547569486ec7f2cf74a31~mv2.jpg|클러스터 퇴사Process 안내>클러스터 퇴사Process 안내]*\n\n\n"
 
         notice_msg = (
-            f"안녕하세요? 평택 클러스터 구성원 여러분!\n"
+            f"1. *중요도* : 중\n"
+            f"2. *대상* : 평택 클러스터 임직원 전체\n"
+            f"3. *주요 내용*\n\n"
             f"\n"
+            f"안녕하세요? 평택 클러스터 구성원 여러분!\n\n"
             f" 효율적인 업무 인수인계와 원활한 퇴사 절차를 위해,\n"
             f" 기존의 퇴사 관련 규정을 다시 한번 확인하시어 준수해주시기를 바랍니다.\n"
             f" 이는 구성원 여러분의 권익 보호를 위한 중요한 사항이니 적극적인 협조 부탁드립니다.\n\n"
@@ -63,12 +66,11 @@ def main():
             f"> - *최소* : 퇴사 예정일 15일 전\n\n"
             f":three: *무단 결근 및 결근 남용 금지*\n"
             f">사전 합의 없는 결근 후 퇴사는 삼가주시고, 출근이 어려울 경우 지체 없이 부서 관리자와 상의해 주시길 바랍니다.\n\n"
-            f":four: *문의사항*\n"
+            f"*:slack: 문의사항 :*\n"
             f"인사총무_담당자 : <@U094ZMCF1T2> <@U05P7L2PDG9> <@U05P7LCBQ8H> <@U05NEF6RNDV> \n\n"
             f"\n"
             f" 감사합니다.\n"
             f"\n"
-            f" * :point_right: <https://static.wixstatic.com/media/50072f_d531fd60687547569486ec7f2cf74a31~mv2.jpg|퇴사 프로세스 공지>*\n"
         )
  
 # 메시지 본문
